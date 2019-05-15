@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="fjtimp" version="0.0.1" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>MP</name>
+
+
+    <js-module name="MP" src="www/MP.js">
+        <clobbers target="cordova.plugins.MP" />
+    </js-module>
+
+
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="MP">
+                <param name="android-package" value="fjtimp.MP" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/MP.java" target-dir="src/fjtimp/MP" />
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+    </platform>
+
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="MP">
+                <param name="ios-package" value="MP" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/MP.m" />
+        <framework src="MercadoPagoSDK" type="podspec" spec="3.0.0-BETA-39" />
+    </platform>
+
+</plugin>

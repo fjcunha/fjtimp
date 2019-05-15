@@ -1,0 +1,9 @@
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.mercadopago:connect:1.0.7'
+    implementation ('com.mercadopago:sdk:2.5.3@aar') { transitive = true }
+}
