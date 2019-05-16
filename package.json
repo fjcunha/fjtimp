@@ -1,7 +1,7 @@
 {
   "name": "fjtimp",
   "version": "0.0.1",
-  "description": "",
+  "description": "Plugin para acessar biblioteca do Mercado Pago",
   "cordova": {
     "id": "fjtimp",
     "platforms": [
@@ -9,11 +9,19 @@
       "ios"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fjcunha/fjtimp.git"
+  },
   "keywords": [
     "ecosystem:cordova",
     "cordova-android",
     "cordova-ios"
   ],
-  "author": "",
-  "license": "ISC"
+  "author": "Fabrício Júnio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fjcunha/fjtimp/issues"
+  },
+  "homepage": "https://github.com/fjcunha/fjtimp#readme"
 }
